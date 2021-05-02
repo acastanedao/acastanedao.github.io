@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>DRE | Inicio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/cookieconsent.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/pymecnx.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-pc-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-pc-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-pc-icon-72x72.png">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-pc-icon-57x57.png">
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+				"images/bg/pyme01.jpg",
+				"images/bg/pyme02.jpg",
+				"images/bg/pyme03.jpg",
+				"images/bg/pyme04.jpg"
+	    ], {duration: 5000, fade: 500, centeredY: true });
+
+		$("#mapwrapper").gMap({ controls: false,
+         	scrollwheel: false,
+         	markers: [{ 	
+              	latitude:40.7566,
+				longitude: -73.9863,
+          	icon: { image: "images/marker.png",
+              	iconsize: [44,44],
+          		iconanchor: [12,46],
+          		infowindowanchor: [12, 0] } }],
+          	icon: { 
+              	image: "images/marker.png", 
+             	iconsize: [26, 46],
+              	iconanchor: [12, 46],
+              	infowindowanchor: [12, 0] },
+         	latitude:40.7566,
+         	longitude: -73.9863,
+          	zoom: 14 });
+				
+		setTimeout(function () {
+			$("#cookieConsent").fadeIn(500);
+			}, 3500);
+
+			$("#closeCookieConsent, .cookieConsentOK").click(function() {
+			$("#cookieConsent").fadeOut(500);
+			}); 
+			
+			$("#footer-wrapper").load("footer.html"); 
+			$("#tycbody").load("terminos-condiciones.html");
+			$("#pdpbody").load("politicas-privacidad.html");
+		});
+    </script>
+</head><!--/head-->
+<body>
+<div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                 <a class="navbar-brand" href="index.html"><h1><span class="pe-7s-keypad bounce-in"></span> DRE</h1></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+					 	<li><a href="about-us.html">Quiénes somos</a></li>
+						<li class="dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Diagnósticos<i class="icon-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Financiero</a></li>
+									<li><a href="#">Fiscal</a></li>
+									<li><a href="#">Nóminas y Seguridad Social</a></li>
+									<li><a href="#">Prevención de Lavado de Dinero</a></li>
+								</ul>
+						</li>
+						<li class="dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Impuestos<i class="icon-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Declaraciones</a></li>
+									<li><a href="#">Regularización fiscal y atención de requerimientos</a></li>
+									<li><a href="#">Trámites y servicios</a></li>
+								</ul>
+						</li>
+						<li class="dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Auditoria y Atestiguamientos<i class="icon-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Dictamen Estados Finaniceros</a></li>
+									<li><a href="#">Dictamen Fiscal</a></li>
+									<li><a href="#">Dictamen IMSS</a></li>
+									<li><a href="#">Dictamen INFONAVIT</a></li>
+									<li><a href="#">Informe Prevención de Lavado de Dinero</a></li>
+								</ul>
+						</li>
+						<li><a href="#contact"><i class="fa fa-envelope-o"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+<section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                	<span class="home-icon pe-7s-keypad bounce-in"></span>
+                                    <h2 class="boxed animation animated-item-1 fade-down">Firma Boutique</h2>
+									<br>
+                                    <p class="boxed animation animated-item-2 fade-up">Consultoría Financiera & Impuestos & Prevención de Lavado de Dinero</p>
+                                    <br>
+                                    <!-- <a class="btn btn-md animation bounce-in" href="#services">Leer más</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+
+    <div id="content-wrapper">
+        <section id="services" class="white">
+            <div class="container">
+            <div class="gap"></div> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Diagnósticos</h2>
+                            <hr>
+                            <p>El logro de  los objetivos empresariales, requiere de un proceso de planeación estratégica y de un proceso 
+								administrativo adecuado, que permita generar control sobre la operación, salvaguardar los activos, obtener 
+								rentabilidad, reducir riesgos e incertidumbre. Por ello en DRE ponemos a tu disposición diagnósticos con 
+								enfoques de prevención, detección, corrección y mejora continua.
+							</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-2">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+										<a href="#">
+											<i class="fa fa-usd fa fa-md"></i>
+										</a>
+                            </div>
+                            <div class="media-body fade-up">
+										<h3 class="media-heading">Financiero</h3>
+										<p class="text-justify">
+											Analizamos:
+										</p>
+										<p>
+											<i class="fa fa-caret-right"></i> Estados Financieros en su conjunto.<br>
+											<i class="fa fa-caret-right"></i> Due Diligence en partidas específicos de los Estados Financieros.<br>
+											<i class="fa fa-caret-right"></i> Optimización de Resultados, Flujo de efectivo, Costo financiero y Capital de trabajo.<br>
+											<i class="fa fa-caret-right"></i> Alternativas de Financiamiento e Inversión.<br>
+											<i class="fa fa-caret-right"></i> Administración de Riesgos.<br>
+										</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-6-->
+                    <div class="col-md-6 col-sm-2">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+								<a href="asesoria-legal.html">
+                            	    <i class="fa fa-book fa fa-md"></i>
+								</a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Fiscal</h3>
+								<p class="text-justify">
+									Analizamos:
+								</p>
+								<p>
+									<i class="fa fa-caret-right"></i> Contabilidad Electrónica.<br>
+									<i class="fa fa-caret-right"></i> Cumplimiento Fiscal correcto y oportuno.<br>
+									<i class="fa fa-caret-right"></i> Conciliación Bancarias  vs CFDI y Sistemas  / Conciliación contabilidad contable -fiscal / Conciliación ISR-IVA.<br>
+									<i class="fa fa-caret-right"></i> Discrepancia Fiscal, Presunción de Ingresos, 69b, Defraudación Fiscal, 113 bis,  y otros delitos fiscales.<br>
+									<i class="fa fa-caret-right"></i> Materialidad, Razón de Negocios y Sustancia Económica.<br>
+								</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-6-->
+				</div><!--/.row-->
+				<div class="gap"></div><!--Esto sirve para colocar un espacio-->
+				<div class="row">
+                    <div class="col-md-6 col-sm-2">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+										<a href="outsourcing.html">
+                                <i class="fa fa-group fa fa-md"></i>
+										</a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Nóminas y Seguridad Social</h3>
+                                <p class="text-justify">
+									Analizamos:
+								</p>
+								<p>
+									<i class="fa fa-caret-right"></i> Control interno en el cálculo de nomina (proceso automáticos y manuales).<br>
+									<i class="fa fa-caret-right"></i> Parametrización en sistema de bases de acumulación, retención y descuento para SBC, ISR, ISN, IMSS, INFONAVIT.<br>
+									<i class="fa fa-caret-right"></i> Remuneraciones, prestaciones y  pagos, cálculo y entero de cuotas obrero patronales, clasificación y prima de grado de riesgo.<br>
+									<i class="fa fa-caret-right"></i> Registros Contable, Pruebas globales de control, conciliaciones y consultas a visor de nomina.<br>
+									<i class="fa fa-caret-right"></i> Declaraciones de pagos provisionales, informativas y anuales para el entero y pago de retenciones e impuestos.<br>
+								</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-6-->
+					<div class="col-md-6 col-sm-2">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+										<a href="outsourcing.html">
+                                <i class="fa fa-suitcase fa fa-md"></i>
+										</a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Prevención de Lavado de Dinero</h3>
+                                <p class="text-justify">
+									Analizamos:
+								</p>
+								<p>
+									<i class="fa fa-caret-right"></i> Control interno en el cálculo de nomina (proceso automáticos y manuales).<br>
+									<i class="fa fa-caret-right"></i> Parametrización en sistema de bases de acumulación, retención y descuento para SBC, ISR, ISN, IMSS, INFONAVIT.<br>
+									<i class="fa fa-caret-right"></i> Remuneraciones, prestaciones y  pagos, cálculo y entero de cuotas obrero patronales, clasificación y prima de grado de riesgo.<br>
+									<i class="fa fa-caret-right"></i> Registros Contable, Pruebas globales de control, conciliaciones y consultas a visor de nomina.<br>
+									<i class="fa fa-caret-right"></i> Declaraciones de pagos provisionales, informativas y anuales para el entero y pago de retenciones e impuestos.<br>
+								</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-6-->
+                </div><!--/.row-->
+                <!--<div class="gap"></div>--><!--Esto sirve para colocar un espacio-->
+            </div>
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">¿Qué es ser PyME?</h2>
+                            <hr>
+                            <p>La finalidad de las Pequeñas y Medianas Empresas (PyMES) es vender productos y servicios</p>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div class="container">     
+            <div class="row">            
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-red bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Existen 20 millones de PyMES</h3>
+	                            <span>Las PyMES generan el 72% de empleos.</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="72%" style="width: 72%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">72</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-cyan bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Tejido Empresarial</h3>
+	                            <span>En México constituyen mas del 99% del tejido empresarial.</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="99%" style="width: 99%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">99</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-primary bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Sector Económico</h3>
+	                            <span>80% de las PyMES se dedican al sector servicios.</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="80%" style="width: 80%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">80</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-pink bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Empleo</h3>
+	                            <span>Las PyMES son responsables de mas del 70% de las contrataciones.</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="70%" style="width: 70%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">70</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div><!--/.row-->
+	            <!--<div class="gap"></div>-->
+        	</div>
+        </section>
+
+<!--AFCO_20180911.- Esta sección de momento no la ocupamos-->
+<!--
+		<section id="single-quote" class="divider-section"> 	            	        
+	            <div class="container">
+	            	<div class="gap"></div> 
+	                <div class="row">                        
+	                    <div class='col-md-offset-2 col-md-8 fade-up'>
+	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+	                            <div class="carousel-inner">
+	                                <div class="item active">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/team/team01.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+	                                                <small>Someone famous</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>	                                
+	                            </div>                                     
+	                        </div> 
+	                    </div>
+	                </div>
+	                <div class="gap"></div>
+	      		</div>
+  		</section>
+-->
+        <section id="about-us" class="white">
+        	<div class="container">
+	            <!--<div class="gap"></div>-->
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <div class="center gap fade-down section-heading">
+	                        <h2 class="main-title">Nosotros</h2>
+	                        <hr>
+	                        <p>Empresa de consultoría de negocios</p>
+	                    </div>                
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-md-10 col-md-offset-1 fade-up">
+	                    <p class="text-justify">
+							  Somos una empresa de consultoría de negocios online y offline en la que ofrecemos una amplia gama de servicios de asesoramiento y outsourcing. 
+							  Desde servicios de gestión de cobros y pagos hasta el desarrollo completo de complejos planes de negocios pasando también por la promoción y 
+							  ventas de productos y servicios elaborando estrategias a la medida de su negocio.
+							  </p>
+							  
+							  <p class="text-justify">
+							  Si su empresa necesita el servicio profesional de un ejecutivo con basta experiencia en el mundo para el desarrollo de nuevo negocios, en pyme conexión 
+							  contamos con los recursos necesarios para ayudarlo.
+							  </p>
+	                </div>
+	                <div class="col-md-4 fade-up">
+
+	                </div>
+	            </div>
+               <div class="gap"></div>
+				</div>
+			</section>
+
+
+            <section id="testimonial-carousel" class="divider-section">
+            <div class="gap"></div>
+	            <div class="container">
+	                <div class="row">
+                    	<div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Algunas características de las PyMES</h2>
+                            <hr>
+                            <p>¿Cuales son las diferencias entre las PyME y otros tipos de empresa?</p>
+                            <div class="gap"></div>
+                        </div>                         
+	                    <div class="col-md-offset-2 col-md-8 fade-up">
+	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+	                            <!-- Bottom Carousel Indicators -->
+	                            <ol class="carousel-indicators">
+	                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="1"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="2"></li>
+	                            </ol>                                
+	                            <!-- Carousel Slides / Quotes -->
+	                            <div class="carousel-inner">                                
+	                              <!-- Quote 1 -->
+	                                <div class="item active">
+											  <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/pyme/definicion_01.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>El número de empleados de la empresa no supera los 250 trabajadores</p>
+	                                                <!--<small>Citar Fuente</small>-->
+	                                            </div>
+	                                        </div>
+												 </blockquote>
+	                                </div>
+	                                <!-- Quote 2 -->
+	                                <div class="item">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/pyme/definicion_02.png" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>El volumen de negocios anual ha de ser inferior a 50 millones de euros.</p>
+	                                                <!--<small>Citar Fuente</small>-->
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                                <!-- Quote 3 -->
+	                                <div class="item">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/pyme/definicion_03.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>El balance general no puede ascender de 43 millones de euros.</p>
+	                                                <!--<small>Citar Fuente</small>-->
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                            </div>                                     
+	                        </div> 
+	                    </div>
+	                </div>
+	                <div class="gap"></div>
+	      		</div>
+      		</section>
+
+            <section id="blog" class="white">
+                <div class="container">
+                    <div class="center gap fade-down section-heading">
+                   		<div class="gap"></div>
+                        <h2 class="main-title">Contenido</h2>
+                        <hr>
+                        <p>Visite nuestras diferentes secciones</p>
+                    </div>  
+                    <div class="gap"></div>
+                    <div class="row">
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio19.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="about-us.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Nosotros</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+													<time datetime="2018-04-01">Abril, 2018</time>
+	                                </div>
+	                                <div>
+	                                    Somos una empresa de consultoría de negocios online y offline en la que ofrecemos una amplia gama de servicios de asesoramiento y outsourcing.
+													<br>
+													<br>
+													<br>
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="about-us.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio20.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="programas-apoyo.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Apoyo para PyMES</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+												  <time datetime="2018-04-01">Abril, 2018</time>
+	                                </div>
+	                                <div>
+	                                    El Fondo de Apoyo para la Micro, Pequeña y Mediana Empresa (<a class="" href="http://www.fondopyme.gob.mx/" target="new">FONDO PYME</a>)  es un instrumento 
+													que busca apoyar a las empresas en particular a las de menor tamaño y a los emprendedores con el propósito de promover el 
+													desarrollo económico nacional 
+												</div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="programas-apoyo.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio21.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="asesoria-legal.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Asesoría legal</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+													<time datetime="2018-02-01">Febrero, 2018</time>
+	                                </div>
+	                                <div>
+	                                    Los factores de riesgo en las micro, pequeñas y medianas empresas siempre están presentes. Buscar un crecimiento empresarial 
+													implica afrontar nuevos retos y conduce al empresario a mantenerse vigente en cuanto a procesos y mecanismos de prevención.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="asesoria-legal.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </div> <!--/.row-->
+                    <div class="gap"></div>
+                    <div class="row">
+								<div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio27.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="outsourcing.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Outsourcing</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+													<time datetime="2018-02-01">Enero, 2018</time>
+	                                </div>
+	                                <div>
+	                                    Con nuestros servicios de outsourcing ayudamos a que tu compañía centre sus esfuerzos en los aspectos esenciales del propio negocio, 
+													delegando así determinadas áreas y funcionalidades no estratégicas.
+													<br><br>
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="outsourcing.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio22.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="ser-pyme.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">¿Qué es ser PyME?</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+													<time datetime="2018-02-01">Febrero, 2018</time>
+	                                </div>
+	                                <div>
+											  		¿Cómo definimos una PyME? ¿Cuáles son las diferencias entre las PyME y otros tipos de empresas? ¿Existen diferentes tipos de PyME? 
+													El término PyME es cada vez más frecuente. Sin embargo, no todo el mundo tiene claro su significa o las características de estas empresas.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="ser-pyme.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio23.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="negocios.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Negocios</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+												  <time datetime="2018-02-01">Abril, 2018</time>
+	                                </div>
+	                                <div>
+	                                    Conoce aquí la experiencia directa de mujeres y hombres que, con su trabajo tenaz y el apoyo de la 
+													<a href="http://www.2006-2012.economia.gob.mx/conoce-la-se/quienes-somos" target="new">SE</a>, con herramientas 
+													como capacitación y orientación, financiamiento, gestión, comercialización e innovación, lograron convertirse en 
+													ejemplares casos de éxito. </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="negocios.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </div> <!--/.row-->
+						  <div class="gap"></div>
+                    <div class="row">
+								<div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio24.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="crear-una-empresa.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Crear una empresa en México</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+												  <time datetime="2018-02-01">Enero, 2018</time>
+	                                </div>
+	                                <div>
+	                                    El trámite en México para crear una empresa es en su totalidad en línea  y para esto se debe ingresar a la siguiente página 
+													<a href="https://www.gob.mx/tuempresa" target="new">www.gob.mx/tuempresa</a>, 
+													que está avalada por la <a href="https://www.gob.mx/se/" target="new">Secretaría de Economía</a>. 
+													<br><br>
+												</div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="crear-una-empresa.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio25.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="fundamentos-mkt-digital.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Marketing digital</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+													<time datetime="2018-02-01">Abril, 2018</time>
+	                                </div>
+	                                <div>
+											  		La finalidad de todas las Pequeñas y Medianas Empresas (PyMES) es vender productos y servicios, pero ¿cual es la forma de lograr el exito ante la recesión económica? 
+													Las pymes generan un 72% de los empleos en el país, sin embargo, sus estrategias y diversificación suelen ser limitadas.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="fundamentos-mkt-digital.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio26.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="accion-comercial.html"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Acción comercial</h2>
+	                                <div class="author">
+	                                    <!--<i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> -->
+												  <time datetime="2018-02-01">Marzo, 2018</time>
+	                                </div>
+	                                <div>
+	                                    Preparar a nuestro equipo de ventas, organizarlo, motivarlo, involucrarlo en la estrategia a seguir y prever ventas con el equipo serán 
+													las tareas continuas de una forma estructurada y coherente para consolidar resultados previstos.
+													<br><br>
+												</div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="accion-comercial.html" class="btn btn-outlined btn-primary">Leer más</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </div><!--/.row-->
+                </div>
+       		</section>
+
+            <section id="pricing" class="white">
+                <div class="container">
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">Perfil de las PyMES</h2>
+                        <hr>
+                        <p>Existen varios tipos de perfiles que diferencian a las PyMES</p>
+                    </div>  
+                    <div class="gap"></div>
+                    <div id="pricing-table" class="row">
+                        <div class="col-md-3 col-xs-6 flip-in">
+                            <ul class="plan plan1">
+                                <li class="plan-name">
+                                    <h3>Micro</h3>
+                                </li>
+                                <li class="plan-price text-left">
+                                    <div>
+													<small>SECTOR</small>
+													<span class="price">Todos</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>&lt;10</strong> Trabajadores
+                                </li>
+                                <li>
+                                    Hasta <strong><sup>$</sup>4 mdp</strong> ventas anuales
+                                </li>
+										  <li>
+                                   &nbsp;
+                                </li>
+										  <li>
+                                   &nbsp;
+                                </li>
+                                <li class="plan-action">
+                                    <a href="perfil-pyme.html" class="btn btn-outlined btn-primary btn-md btn-white">Leer más</a>
+                                </li>
+                            </ul>
+                        </div><!--/.col-md-3-->
+                        <div class="col-md-3 col-xs-6 flip-in">
+                            <ul class="plan plan2 featured">
+                                <li class="plan-name">
+                                    <h3>Pequeña</h3>
+                                </li>
+                                <li class="plan-price text-left">
+                                    <div>
+													<small>SECTOR</small>
+                                        <span class="price">Todos</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>11</strong> a <strong>30</strong> Trabajadores
+                                </li>
+                                <li>
+                                   De <sup>$</sup><strong>&gt;4.01 mdp</strong>
+                                </li>
+										  <li>
+                                   hasta 
+                                </li>
+										  <li>
+                                   <sup>$</sup><strong>100 mdp</strong> ventas anuales
+                                </li>
+                                <li class="plan-action">
+                                    <a href="perfil-pyme.html" class="btn btn-outlined btn-primary btn-md">Leer más</a>
+                                </li>
+                            </ul>
+                        </div><!--/.col-md-3-->
+                        <div class="col-md-3 col-xs-6 flip-in">
+                            <ul class="plan plan3">
+                                <li class="plan-name">
+                                    <h3>Grande</h3>
+                                </li>
+                                <li class="plan-price text-left">
+                                    <div>
+													<small>SECTOR</small>
+                                        <span class="price">Comercio</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>31</strong> a <strong>100</strong> Trabajadores
+                                </li>
+                                <li>
+                                   De <sup>$</sup><strong>&gt;100.01 mdp</strong>
+                                </li>
+										  <li>
+                                   hasta 
+                                </li>
+										  <li>
+                                   <sup>$</sup><strong>250 mdp</strong> ventas anuales
+                                </li>
+                                <li class="plan-action">
+                                    <a href="perfil-pyme.html" class="btn btn-outlined btn-primary btn-md btn-white">Leer más</a>
+                                </li>
+                            </ul>
+                        </div><!--/.col-md-3-->
+                        <div class="col-md-3 col-xs-6 flip-in">
+                            <ul class="plan plan4 featured">
+                                <li class="plan-name">
+                                    <h3>Grande</h3>
+                                </li>
+                                <li class="plan-price text-left">
+                                    <div>
+													<small>SECTOR</small>
+                                        <span class="price">Servicios/Industria</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>51</strong> a <strong>100</strong> Trabajadores
+                                </li>
+                                <li>
+                                   De <sup>$</sup><strong>&gt;100.01 mdp</strong>
+                                </li>
+										  <li>
+                                   hasta 
+                                </li>
+										  <li>
+                                   <sup>$</sup><strong>250 mdp</strong> ventas anuales
+                                </li>
+                                <li class="plan-action">
+                                    <a href="perfil-pyme.html" class="btn btn-outlined btn-primary btn-md btn-white">Leer más</a>
+                                </li>
+                            </ul>
+                        </div><!--/.col-md-3-->
+                    </div>
+                    <div class="gap"></div> 
+                </div>
+            </section>
+
+<!--
+			<div id="mapwrapper">
+				<div id="map"></div>
+			</div>
+-->
+
+            <section id="contact" class="white">
+                <div class="container">
+                	<div class="gap"></div>
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">Contáctenos</h2>
+                        <hr>
+                        <p>Con gusto responderemos todas sus dudas</p>
+                    </div>    
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 fade-up">
+                            <h3>Contacto</h3>
+                            <p>
+										<!--<span class="icon icon-home"></span>Time Square, New York<br/>-->
+										<!--<span class="icon icon-phone"></span>+36 65984 405<br/>-->
+										<!--<span class="icon icon-mobile"></span>+36 65984 405<br/>-->
+										<span class="icon icon-envelop"></span> <a href="#contact">contacto@pymeconexion.com</a> <br/>
+										<!--<span class="icon icon-twitter"></span> <a href="#">@infinityteam.com</a> <br/>-->
+										<!--<span class="icon icon-facebook"></span> <a href="#">Infinity Agency</a> <br/>-->
+                            </p>
+                        </div><!-- col -->
+                    
+                        <div class="col-md-8 fade-up">
+                            <h3>Envíenos un mensaje</h3>
+                            <br>
+                            <br>
+                            <div id="message"></div>
+                            <form method="post" action="sendemail.php" id="contactform">
+                                <input type="text" name="name" id="name" placeholder="Nombre" />
+                                <input type="text" name="email" id="email" placeholder="Email" />
+                                <input type="text" name="website" id="website" placeholder="Sitio web" />
+                                <textarea name="comments" id="comments" placeholder="Comentarios"></textarea>
+                                <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Enviar mensaje" />
+                            </form>
+                        </div><!-- col -->
+                    </div><!-- row -->  
+                    <div class="gap"></div>         
+                </div>
+            </section>
+        </div>
+
+	<div id="footer-wrapper">
+	 	<footer id="footer" class="">
+		<div class="container">
+			 <div class="row">
+				  <div class="col-sm-11">
+						texto izquierda
+				  </div>
+				  <div class="col-sm-1">
+						texto derecha
+				  </div>
+			 </div>
+		</div>
+	</footer><!--/#footer-->
+	 </div>
+
+<!-- Definición de modales -->
+<!-- TerminosCondiciones-->
+<div id="TerminosCondiciones" class="modal fade">
+ <div class="modal-dialog" style="overflow-y: auto; max-height:75%;  margin-top: 50px; margin-bottom:50px;">
+	 <!-- Modal content-->
+	 <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Términos y Condiciones</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div id="tycbody" class="modal-body">
+        Meter texto.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /.TerminosCondiciones-->
+
+<!-- PoliticaPrivacidad-->
+<div id="PoliticaPrivacidad" class="modal fade">
+ <div class="modal-dialog" style="overflow-y: auto; max-height:75%;  margin-top: 50px; margin-bottom:50px;">
+	 <!-- Modal content-->
+	 <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Aviso de Privacidad</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div id="pdpbody" class="modal-body">
+        Meter texto.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /.PoliticaPrivacidad-->
+
+<div id="cookieConsent">
+	<div id="closeCookieConsent">x</div>
+	<div>
+		<h4>Acerca de las cookies utilizadas en este sitio</h4>
+		<p>
+			Utilizamos cookies para personalizar y mejorar su experiencia en nuestro sitio. Visite nuestra <a href="javascript:void(0);">Aviso de Privacidad</a> para obtener más información. 
+			Al usar este sitio, acepta el uso que hacemos de las cookies. <a class="cookieConsentOK">Aceptar</a>
+		</p>
+	</div>
+</div>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>   
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script> 
+    <script src="js/init.js"></script>
+	
+
+	 
+</body>
+</html>
